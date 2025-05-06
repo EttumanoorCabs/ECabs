@@ -1,0 +1,135 @@
+/* Header Styles */
+.header {
+  position: sticky;
+  height: clamp(80px, 10vh, 100px);
+  top: 0;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+  padding: clamp(0.75rem, 2vw, 1rem) 0;
+}
+
+.header .container {
+  height: clamp(40px, 6vh, 50px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: min(1200px, 95vw);
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 2rem);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.3rem, 1vw, 0.5rem);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.logo-icon {
+  color: var(--primary-color);
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: clamp(60vh, 75vh, 80vh);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: min(800px, 90vw);
+  padding: 0 clamp(1rem, 3vw, 2rem);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: clamp(0.75rem, 2vw, 1rem);
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  opacity: 0.9;
+}
+
+/* Media queries for different aspect ratios */
+@media (max-aspect-ratio: 9/16) {
+  .header {
+    height: 80px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .header {
+    height: 100px;
+  }
+
+  .container {
+    max-width: min(1400px, 95vw);
+  }
+
+  .nav {
+    gap: 2.5rem;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-content {
+    max-width: min(1000px, 90vw);
+  }
+}

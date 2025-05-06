@@ -1,0 +1,90 @@
+/* Contact Section */
+.contact-section {
+  padding: 4rem 0;
+  background-color: var(--background-muted);
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  max-width: min(1000px, 90vw);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-card {
+  background: var(--background);
+  padding: clamp(1.5rem, 4vw, 2rem);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  /* Add aspect ratio container properties */
+  aspect-ratio: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Rest of the existing styles */
+.contact-card svg {
+  color: var(--primary-color);
+  margin-bottom: clamp(0.75rem, 2vw, 1rem);
+  height: clamp(2rem, 4vw, 3rem);
+  width: auto;
+}
+
+.contact-card h3 {
+  margin-bottom: clamp(0.3rem, 1vw, 0.5rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+}
+
+.contact-card p {
+  color: var(--text-muted);
+  margin-bottom: clamp(0.75rem, 2vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.contact-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.mail-id{
+  text-align:left;
+}
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-card address {
+  font-style: normal;
+  color: var(--text-muted);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+.mail-id{
+  margin-right:5px;
+}
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .contact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: min(1200px, 95vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    max-width: min(600px, 90vw);
+  }
+  
+  .contact-card {
+    padding: 1.5rem;
+  }
+}
