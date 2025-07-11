@@ -6,7 +6,7 @@ import { Car } from "@/types/types";
 
 export default function CarCard (data:Car) {
     return(
-        <section className="w-72 h-72 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300">
+        <section className="w-72 h-72 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
             <div className="h-full flex flex-col">
                 {/* Image container - takes up 60% of card height */}
                 <div className="h-[60%] relative bg-gray-50 flex items-center justify-center">
