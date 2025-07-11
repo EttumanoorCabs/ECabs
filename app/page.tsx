@@ -1,5 +1,5 @@
-import Header from "@/components/header"
-import Lander from "@/components/landing"
+import Header from "@/app/_components/header"
+import Lander from "@/app/_components/landing"
 
 export default function Home() {
   return (
