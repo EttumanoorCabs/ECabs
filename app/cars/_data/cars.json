@@ -1,0 +1,106 @@
+{
+  "etios": {
+    "name": "Toyota Etios",
+    "shortDescription": "Comfortable and Appealing Seadan",
+    "description": "The Toyota Etios is a classic sedan, perfect for both long strech trips and short travel.Ideal for solo travelers or small (2 or 3 member) families looking for a stylish and reliable option.",
+    "image": "/cars/Etios.jpeg",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "features": [
+      "Air Conditioning",
+      "ABS & Airbags",
+      "USB Charging Ports"
+    ]
+  },
+  "innova": {
+    "name": "Toyota Innova",
+    "shortDescription": "Spacious and comfortable family MPV",
+    "description": "The Toyota Innova is a versatile multi-purpose vehicle that offers exceptional comfort and space. With its reliable performance, comfortable seating for up to 7 passengers, and ample cargo space, it's perfect for family trips or group travel.",
+    "image": "/cars/Innova.jpeg",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "features": [
+      "Dual Zone Climate Control",
+      "Advanced Safety Features",
+      "Large Cargo Space"
+    ]
+  },
+  "innova crysta": {
+    "name": "Toyota Innova Crysta",
+    "shortDescription": "Spacious and comfortable family MPV",
+    "description": "If you're looking for a reliable, comfortable, and cost-effective MPV for your cab service, the Toyota Innova has long been a proven choice. With its spacious cabin, ergonomic seating, and smooth suspension, it ensures a comfortable ride for passengers on both short and long journeys.",
+    "image": "/cars/InnovaCrysta.jpeg",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "features": [
+      "Super Spacious and Comfortable",
+      "Advanced Safety Features",
+      "Large Boot"
+    ]
+  },
+  "swift": {
+    "name": "Maruti Swift Dzire ",
+    "shortDescription": "Compact and fuel-efficient city car",
+    "description": "The Suzuki Swift Dzire is a stylish and economical compact sedan, perfect for a city ride.Ideal for solo travelers or small (2 or 3 member) families looking for a reliable and cost-effective option.",
+    "image": "/cars/Dzire.jpeg",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "features": [
+      "Air Conditioning",
+      "ABS & Airbags",
+      "USB Charging Ports"
+    ]
+  },
+  "ertiga": {
+    "name": "Maruti Suzuki Ertiga",
+    "shortDescription": "The versatile and fuel-efficient MPV,",
+    "description": "Looking for a smart, fuel-efficient, and comfortable MPV? The Maruti Suzuki Ertiga is the ideal choice.whether you're traveling within the city or on a long-distance journey, the Ertiga ensures a smooth and spacious ride for you and your companions.",
+    "image": "/cars/Ertiga.jpeg",
+    "seats": 7,
+    "fuelType": "Petrol/CNG",
+    "features": [
+      "Spacious & Comfortable",
+      "Fuel-Efficient & CNG Option",
+      "Low Maintenance & Reliability"
+    ]
+  },
+  "traveller": {
+    "name": "Force Traveller",
+    "shortDescription": "Spacious, reliable, powerful, comfortable, safe MPV",
+    "description": "The Force Traveller is a spacious, reliable, and fuel-efficient multi-utility vehicle, perfect for travel, tourism, and business needs. With a powerful engine, comfortable seating, and advanced safety features, it ensures a smooth and hassle-free journey for passengers and operators alike.",
+    "image": "/cars/Traveller.jpeg",
+    "seats": 14,
+    "fuelType": "Diesel",
+    "features": [
+      "Ample Leg Room",
+      "Powerful Engine",
+      "Advanced Safety Features"
+    ]
+  },
+  "bmw": {
+    "name": "BMW",
+    "shortDescription": "Taxi offering luxuary,comfort, style, and elegance.",
+    "description": "Experience luxury and comfort with our BMW, the perfect blend of style, performance, and elegance. This premium vehicle offers a smooth, quiet ride with a spacious, plush interior designed for ultimate relaxation.Ideal for business trips, airport transfers, or special occasions, the BMW sedan stands out with its sleek design and advanced features, ensuring both safety and convenience. Enjoy a first-class travel experience with professional drivers and top-tier service, making every journey as refined and comfortable as possible..",
+    "image": "/cars/BMW.jpeg",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "features": [
+      "Spacious, premium leather interior",
+      "Smooth, quiet ride with advanced safety features",
+      "Professional chauffeur for a first-class experience"
+    ]
+  },
+  "Audi": {
+    "name": "Audi",
+    "shortDescription": "Luxury taxi offering comfort, elegance, and superior performance.",
+    "description": "Experience refined luxury with our Audi, designed for those who appreciate comfort, elegance, and top-tier performance. With its sleek exterior, plush interior, and advanced safety features, this premium ride is perfect for business trips, airport transfers, or any special occasion. Enjoy a smooth, stylish journey with professional chauffeur service, ensuring a seamless travel experience every time.",
+    "image": "/cars/Audi.jpeg",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "features": [
+      "Sophisticated, spacious interior with premium finishes",
+      "Smooth, powerful drive with advanced safety technology",
+      "Professional chauffeur ensuring a seamless travel experience"
+    ]
+  }
+}
