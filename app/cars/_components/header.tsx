@@ -21,28 +21,33 @@ export default function Header () {
                             Ettumanoor Cabs
                         </h1>
                     </div>
-                    <nav className="flex space-x-2">
-                        <Link href={'/'} className="group relative">
-                            <button className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 active:scale-95">
-                                Home
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 group-hover:w-full transition-all duration-300 ease-out"></span>
-                            </button>
-                        </Link>
-                        <Link href={'/about'} className="group relative">
-                            <button className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 active:scale-95">
-                                About Us
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 group-hover:w-full transition-all duration-300 ease-out"></span>
-                            </button>
-                        </Link>
-                        <Link href={'/contact'} className="group relative">
-                            <button className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 active:scale-95">
-                                Contact us
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 group-hover:w-full transition-all duration-300 ease-out"></span>
-                            </button>
-                        </Link>
+                    <nav className="hidden md:flex space-x-2">
+                        <NavButton href="/">Home</NavButton>
+                        <NavButton href="/about">About Us</NavButton>
+                        <NavButton href="/contact">Contact us</NavButton>
                     </nav>
+
+                    <div className="md:hidden">
+                        <button className="text-gray-600 hover:text-blue-600 focus:outline-none focus:text-blue-600 transition-colors duration-200">
+                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
     )
+}
+
+function NavButton({ href, children }: { href: string; children: React.ReactNode }) {
+    return (
+        <Link href={href} className="group relative">
+            <button className="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 active:scale-95">
+                {children}
+                {/* Animated underline */}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 group-hover:w-full transition-all duration-300 ease-out"></span>
+            </button>
+        </Link>
+    );
 }
