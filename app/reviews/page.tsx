@@ -12,11 +12,17 @@ export default function ReviewsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8">Customer Reviews</h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-6xl mx-auto px-4 py-24">
+        <div className="text-center mb-20">
+          <div className="inline-block w-16 h-0.5 bg-blue-600 mb-8"></div>
+          <h1 className="text-7xl md:text-8xl font-light mb-6 tracking-tight">
+            <span className="text-black">Customer</span>
+            <span className="text-blue-600"> Reviews</span>
+          </h1>
+        </div>
         
-        <div className="mb-12">
+        <div className="mb-24">
           <ReviewForm onSubmitSuccess={handleSubmitSuccess} />
         </div>
 

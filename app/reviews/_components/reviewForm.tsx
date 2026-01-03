@@ -61,16 +61,16 @@ export default function ReviewForm({ onSubmitSuccess }: ReviewFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Share Your Experience</h2>
+    <form onSubmit={handleSubmit} className="bg-white border border-gray-200 p-12">
+      <h2 className="text-4xl font-light mb-12 text-black">Share Your Experience</h2>
       
       {error && (
-        <div className="mb-4 p-3 bg-red-100 text-red-700 rounded">
+        <div className="mb-8 p-4 bg-red-50 border border-red-200 text-red-600 font-light">
           {error}
         </div>
       )}
 
-      <div className="mb-4">
+      <div className="mb-8">
         <label htmlFor="customerName" className="block text-gray-700 font-medium mb-2">
           Your Name *
         </label>
@@ -80,13 +80,13 @@ export default function ReviewForm({ onSubmitSuccess }: ReviewFormProps) {
           required
           value={formData.customerName}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, customerName: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-blue-600 transition-colors font-light text-lg"
           placeholder="Enter your name"
         />
       </div>
 
-      <div className="mb-4">
-        <label className="block text-gray-700 font-medium mb-2">
+      <div className="mb-8">
+        <label className="block text-gray-500 font-light mb-3 text-sm uppercase tracking-wider">
           Rating *
         </label>
         <StarRating
@@ -95,8 +95,8 @@ export default function ReviewForm({ onSubmitSuccess }: ReviewFormProps) {
         />
       </div>
 
-      <div className="mb-4">
-        <label htmlFor="rideDetails" className="block text-gray-700 font-medium mb-2">
+      <div className="mb-8">
+        <label htmlFor="rideDetails" className="block text-gray-500 font-light mb-3 text-sm uppercase tracking-wider">
           Ride Details *
         </label>
         <input
@@ -105,13 +105,13 @@ export default function ReviewForm({ onSubmitSuccess }: ReviewFormProps) {
           required
           value={formData.rideDetails}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, rideDetails: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-blue-600 transition-colors font-light text-lg"
           placeholder="e.g., Airport to Downtown - Dec 2025"
         />
       </div>
 
-      <div className="mb-4">
-        <label htmlFor="review" className="block text-gray-700 font-medium mb-2">
+      <div className="mb-8">
+        <label htmlFor="review" className="block text-gray-500 font-light mb-3 text-sm uppercase tracking-wider">
           Your Review *
         </label>
         <textarea
@@ -119,7 +119,7 @@ export default function ReviewForm({ onSubmitSuccess }: ReviewFormProps) {
           required
           value={formData.review}
           onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setFormData({ ...formData, review: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:outline-none focus:border-blue-600 transition-colors font-light text-lg resize-none"
           rows={4}
           placeholder="Tell us about your experience..."
         />
@@ -128,7 +128,7 @@ export default function ReviewForm({ onSubmitSuccess }: ReviewFormProps) {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+        className="w-full border-2 border-black text-black py-4 font-light text-lg hover:bg-black hover:text-white transition-all disabled:border-gray-300 disabled:text-gray-300 disabled:hover:bg-transparent disabled:cursor-not-allowed"
       >
         {isSubmitting ? 'Submitting...' : 'Submit Review'}
       </button>

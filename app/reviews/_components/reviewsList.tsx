@@ -43,38 +43,39 @@ export default function ReviewsList() {
 
   if (isLoading) {
     return (
-      <div className="text-center py-8">
-        <p className="text-gray-600">Loading reviews...</p>
+      <div className="text-center py-16">
+        <p className="text-gray-400 font-light text-lg">Loading reviews...</p>
       </div>
     );
   }
 
   if (reviews.length === 0) {
     return (
-      <div className="bg-white p-8 rounded-lg shadow-md text-center">
-        <p className="text-gray-600">No reviews yet. Be the first to share your experience!</p>
+      <div className="border border-gray-200 p-12 text-center">
+        <p className="text-gray-400 font-light text-lg">No reviews yet. Be the first to share your experience!</p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold mb-4">What Our Customers Say</h2>
+    <div className="space-y-8">
+      <div className="w-12 h-0.5 bg-blue-600 mb-12"></div>
+      <h2 className="text-4xl font-light mb-12 text-black">What Our Customers Say</h2>
       {reviews.map((review) => (
-        <div key={review.id} className="bg-white p-6 rounded-lg shadow-md">
-          <div className="flex justify-between items-start mb-3">
+        <div key={review.id} className="border-t border-gray-200 pt-8 pb-8">
+          <div className="flex justify-between items-start mb-6">
             <div>
-              <h3 className="text-xl font-semibold">{review.customerName}</h3>
-              <p className="text-sm text-gray-500">{review.rideDetails}</p>
+              <h3 className="text-2xl font-light text-black">{review.customerName}</h3>
+              <p className="text-sm text-gray-400 font-light mt-1">{review.rideDetails}</p>
             </div>
-            <p className="text-sm text-gray-400">{formatDate(review.date)}</p>
+            <p className="text-sm text-gray-400 font-light">{formatDate(review.date)}</p>
           </div>
           
-          <div className="mb-3">
+          <div className="mb-6">
             <StarRating rating={review.rating} readonly />
           </div>
           
-          <p className="text-gray-700">{review.review}</p>
+          <p className="text-lg text-gray-600 font-light leading-relaxed">{review.review}</p>
         </div>
       ))}
     </div>
