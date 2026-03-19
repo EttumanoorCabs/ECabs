@@ -21,7 +21,7 @@ export default function ContactBody() {
                 </div>
                 <div>
                   <h3 className="text-lg font-light text-gray-500 mb-2">Phone</h3>
-                  <a href="tel:+919876543210" className="text-2xl font-light text-black hover:text-blue-600 transition-colors">+91 9496996868</a>
+                  <a href="tel:+91 9496996868" className="text-2xl font-light text-black hover:text-blue-600 transition-colors">+91 9496996868</a>
                   <p className="text-sm text-gray-400 font-light mt-1">Available 24/7</p>
                 </div>
               </div>
