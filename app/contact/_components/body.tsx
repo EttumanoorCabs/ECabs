@@ -35,7 +35,7 @@ export default function ContactBody() {
                 </div>
                 <div>
                   <h3 className="text-lg font-light text-gray-500 mb-2">Email</h3>
-                  <a href="mailto:info@ecabs.com" className="text-2xl font-light text-black hover:text-blue-600 transition-colors">info@ecabs.com</a>
+                  <a href="mailto:ettumanoorcabsince2025@gmail.com" className="text-2xl font-light text-black hover:text-blue-600 transition-colors">ettumanoorcabsince2025@gmail.com</a>
                   <p className="text-sm text-gray-400 font-light mt-1">Response within 24 hours</p>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export default function ContactBody() {
                 </div>
                 <div>
                   <h3 className="text-lg font-light text-gray-500 mb-2">WhatsApp</h3>
-                  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="text-2xl font-light text-black hover:text-green-500 transition-colors">
+                  <a href="https://wa.me/9496996868" target="_blank" rel="noopener noreferrer" className="text-2xl font-light text-black hover:text-green-500 transition-colors">
                     Chat with us on WhatsApp
                   </a>
                   <p className="text-sm text-gray-400 font-light mt-1">Quick response guaranteed</p>
